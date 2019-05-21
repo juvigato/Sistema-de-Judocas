@@ -8,6 +8,7 @@ import org.fpij.jitakyoei.model.beans.Endereco;
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertNotNull;
 import static org.junit.Assert.assertNull;
+import org.junit.BeforeClass;
 import org.junit.Test;
 /**
  *
@@ -17,6 +18,7 @@ public class TesteEndereco {
     private static Endereco endereco;
     Endereco e = new Endereco();
     
+    @BeforeClass
     public static void setUp() {
         endereco = new Endereco();
         endereco.setBairro("Tatuape");
@@ -34,7 +36,7 @@ public class TesteEndereco {
     
     @Test
     public void verificaSeRuaPreenchida(){
-        assertNull(endereco.getRua());
+        assertNotNull(endereco.getRua());
     }
     
     @Test
@@ -44,7 +46,7 @@ public class TesteEndereco {
     
     @Test
     public void verificaBairroPreenchida(){
-        assertNull(endereco.getBairro());
+        assertNotNull(endereco.getBairro());
     }
     
     @Test

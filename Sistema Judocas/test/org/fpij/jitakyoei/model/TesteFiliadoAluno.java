@@ -9,6 +9,7 @@ import java.util.Date;
 import org.fpij.jitakyoei.model.beans.Rg;
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertNull;
+import org.junit.BeforeClass;
 import org.junit.Test;
 /**
  *
@@ -17,6 +18,7 @@ import org.junit.Test;
 public class TesteFiliadoAluno {
     private static Filiado filiadoAluno;
     
+    @BeforeClass
     public static void setUp(){
         filiadoAluno = new Filiado();
         filiadoAluno.setNome("Leo");
@@ -38,7 +40,7 @@ public class TesteFiliadoAluno {
     }
     
     @Test
-    public void verificaBairroPreenchida(){
+    public void verificaNomePreenchido(){
         assertEquals("Leo", filiadoAluno.getNome());
     }
 }
