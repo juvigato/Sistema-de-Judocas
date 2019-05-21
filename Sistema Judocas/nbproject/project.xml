@@ -6,6 +6,8 @@
             <name>Sistema Judocas</name>
             <source-roots>
                 <root id="src.dir"/>
+                <root id="src.icon_16x16.dir"/>
+                <root id="src.icon_32x32.dir"/>
             </source-roots>
             <test-roots>
                 <root id="test.src.dir"/>
