@@ -35,6 +35,22 @@ public class TesteEndereco {
     }
     
     @Test
+    public void verificaGetBairro(){
+        assertEquals("Tatuape", endereco.getBairro());
+    }
+    
+    @Test
+    public void verificaSetBairro(){
+        endereco.setBairro("Santo Andre");
+        assertEquals("Santo Andre", endereco.getBairro());
+    }
+    
+    @Test
+    public void verificaBairroPreenchido(){
+        assertNotNull(endereco.getBairro());
+    }
+    
+    @Test
     public void verificaSeRuaPreenchida(){
         assertNotNull(endereco.getRua());
     }
@@ -45,13 +61,19 @@ public class TesteEndereco {
     }
     
     @Test
-    public void verificaBairroPreenchida(){
-        assertNotNull(endereco.getBairro());
+    public void verificaGetEstado(){
+        assertEquals("SP", endereco.getEstado());
     }
     
     @Test
-    public void verificaEstado(){
-        assertEquals("AA",endereco.getEstado());
+    public void verificaSetEstado(){
+        endereco.setEstado("MG");
+        assertEquals("MG", endereco.getEstado());
+    }
+    
+    @Test
+    public void verificaEstadoPreenchido(){
+        assertNotNull(endereco.getEstado());
     }
     
 }

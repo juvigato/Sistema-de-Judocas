@@ -43,4 +43,9 @@ public class TesteFiliadoAluno {
     public void verificaNomePreenchido(){
         assertEquals("Leo", filiadoAluno.getNome());
     }
+    
+    @Test
+    public void verificaRGPreenchido(){
+        assertEquals("Leo", filiadoAluno.getRg());
+    }
 }

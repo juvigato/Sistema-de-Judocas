@@ -37,4 +37,9 @@ public class TesteFaixa {
     public void verificaSeDatareenchida(){
         assertNull(faixa.getDataEntrega());
     }
+    
+    @Test
+    public void verificaCor(){
+        assertEquals("AMARELA", cor.AMARELA);
+    }
 }
