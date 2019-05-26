@@ -18,28 +18,38 @@ import org.fpij.jitakyoei.util.CorFaixa;
  * @author leona
  */
 public class TesteFaixa {
-   private static Faixa faixa;
-   private static CorFaixa cor;
     
     @BeforeClass
     public static void setUp(){
-        faixa = new Faixa();
-        CorFaixa AMARELA = cor.AMARELA;
-        faixa.setDataEntrega(new Date());
-    }
-    
-    @Test
-    public void verificaNomePreenchido(){
-        //assertEquals("Ju", entidade.getNome());
-    } 
-    
-    @Test
-    public void verificaSeDatareenchida(){
-        assertNull(faixa.getDataEntrega());
+        
     }
     
     @Test
     public void verificaCor(){
-        assertEquals("AMARELA", cor.AMARELA);
+        Faixa faixa = new Faixa();
+        CorFaixa cor = CorFaixa.AMARELA;
+        faixa.setCor(cor);
+        faixa.setDataEntrega(new Date());
+        assertEquals(cor, faixa.getCor());
+    } 
+    
+    @Test
+    public void verificaData(){
+        Faixa faixa = new Faixa();
+        Date date = new Date();
+        faixa.setDataEntrega(date);
+        assertEquals(date, faixa.getDataEntrega());
+    }
+    
+    @Test
+    public void verificaToString(){
+        Faixa faixa = new Faixa();
+        CorFaixa cor = CorFaixa.AMARELA;
+        Date dataEntrega = new Date();
+        faixa.setCor(cor);
+        faixa.setDataEntrega(dataEntrega);
+        String expResult = faixa.getCor() + " - " + faixa.getDataEntrega();
+        String result = faixa.toString();
+        assertEquals(expResult, result);
     }
 }
