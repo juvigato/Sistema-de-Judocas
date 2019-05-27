@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package org.fpij.jitakyoei.model;
+package org.fpij.jitakyoei.model.beans;
 import org.fpij.jitakyoei.model.beans.Endereco;
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertNotNull;
@@ -14,7 +14,7 @@ import org.junit.Test;
  *
  * @author leona
  */
-public class TesteEndereco {
+public class EnderecoTest {
     private static Endereco endereco;
     Endereco e = new Endereco();
     

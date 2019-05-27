@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package org.fpij.jitakyoei.model;
+package org.fpij.jitakyoei.beans;
 import org.fpij.jitakyoei.model.beans.Filiado;
 import java.util.Date;
 import org.fpij.jitakyoei.model.beans.Aluno;
@@ -19,7 +19,7 @@ import org.junit.Test;
  *
  * @author leona
  */
-public class TesteAluno {
+public class AlunoTest {
     private static Filiado filiadoAluno;
     
     @BeforeClass

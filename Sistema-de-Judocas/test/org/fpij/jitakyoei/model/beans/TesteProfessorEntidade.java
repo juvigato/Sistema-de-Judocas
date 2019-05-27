@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package org.fpij.jitakyoei.model;
+package org.fpij.jitakyoei.model.beans;
 import org.fpij.jitakyoei.model.beans.Entidade;
 import org.fpij.jitakyoei.model.beans.Professor;
 import org.fpij.jitakyoei.model.beans.ProfessorEntidade;
