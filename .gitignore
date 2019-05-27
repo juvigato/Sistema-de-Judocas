@@ -9,3 +9,5 @@ bin/org/fpij/jitakyoei/view/gui/*.jfd
 fpij.db
 test.db
 /Sistema Judocas/nbproject/private/
+/Sistema-de-Judocas/nbproject/private/
+/Sistema-de-Judocas/build/
