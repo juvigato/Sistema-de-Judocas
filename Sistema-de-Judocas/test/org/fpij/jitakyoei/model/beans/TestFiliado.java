@@ -18,7 +18,7 @@ import org.junit.Test;
  *
  * @author leona
  */
-public class TesteFiliado {
+public class TestFiliado {
     
     @BeforeClass
     public static void setUp(){

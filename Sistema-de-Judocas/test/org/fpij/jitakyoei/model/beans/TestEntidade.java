@@ -15,7 +15,7 @@ import org.junit.Test;
  *
  * @author leona
  */
-public class TesteEntidade {
+public class TestEntidade {
     private static Entidade entidade;
     
     @BeforeClass

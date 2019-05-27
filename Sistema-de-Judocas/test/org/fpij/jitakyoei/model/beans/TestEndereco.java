@@ -14,7 +14,7 @@ import org.junit.Test;
  *
  * @author leona
  */
-public class EnderecoTest {
+public class TestEndereco {
     private static Endereco endereco;
     Endereco e = new Endereco();
     

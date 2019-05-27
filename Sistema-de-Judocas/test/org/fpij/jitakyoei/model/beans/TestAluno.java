@@ -19,7 +19,7 @@ import org.junit.Test;
  *
  * @author leona
  */
-public class AlunoTest {
+public class TestAluno {
     private static Filiado filiadoAluno;
     
     @BeforeClass

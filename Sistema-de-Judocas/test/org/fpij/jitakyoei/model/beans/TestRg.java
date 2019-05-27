@@ -16,7 +16,7 @@ import org.junit.Test;
  *
  * @author leona
  */
-public class TesteRg {
+public class TestRg {
     
     @BeforeClass
     public static void setUp(){

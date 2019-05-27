@@ -17,7 +17,7 @@ import org.fpij.jitakyoei.util.CorFaixa;
  *
  * @author leona
  */
-public class TesteFaixa {
+public class TestFaixa {
     
     @BeforeClass
     public static void setUp(){
