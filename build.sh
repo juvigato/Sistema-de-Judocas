@@ -2,6 +2,7 @@
 
 _PWD=`pwd`
 CopyLibs=$_PWD/lib/org-netbeans-modules-java-j2seproject-copylibstask.jar
+echo $CopyLibs
 
 CLASSPATH=$CLASSPATH:$CopyLibs:
 export CLASSPATH
